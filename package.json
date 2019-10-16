@@ -2,5 +2,10 @@
   "name": "alligator",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.9.6",
+    "cors": "^2.8.5",
+    "graphql-tools": "^4.0.5"
+  }
 }
