@@ -2,10 +2,11 @@ const express = require("express");
 const graphqlHTTP = require("express-graphql");
 const bodyparser = require("body-parser");
 const { buildSchema } = require("graphql");
+const cors = require("cors");
 
 const app = express();
 
-app.use(bodyparser.json());
+app.use(bodyparser.json(), cors());
 
 app.use(
   "/graphql",
